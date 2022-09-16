@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="50%" height="100" src="./kisspng-angle-text-symbol-brand-other-python-5ab0c09b9ea1a7.3286927515215330836498.png"
+    <img width="50%" height="50" src="./kisspng-angle-text-symbol-brand-other-python-5ab0c09b9ea1a7.3286927515215330836498.png"
 </p>
 
 # Projects holbertonschool-higher_level_programming :
