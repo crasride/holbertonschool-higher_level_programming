@@ -32,6 +32,9 @@ new matrix
 >>> matrix_divided([[8, 3, 2],[1, 5, 6]], -2)
 [[-4.0, -1.5, -1.0], [-0.5, -2.5, -3.0]]
 
+******************
+* Cases of Error *
+******************
 
 >>> matrix_divided()
 Traceback (most recent call last):
