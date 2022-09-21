@@ -24,4 +24,7 @@ Basic cases on success:
 	>>> add_integer(1000e1000)
 	Traceback (most recent call last):
 	OverflowError: cannot convert float infinity to integer
-
+	
+	>>> add_integer(str(STR))
+	Traceback (most recent call last):
+	NameError: name 'STR' is not defined
