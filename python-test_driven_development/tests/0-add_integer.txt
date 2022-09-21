@@ -28,3 +28,7 @@ Basic cases on success:
 	>>> add_integer(str(STR))
 	Traceback (most recent call last):
 	NameError: name 'STR' is not defined
+
+	>>> add_integer(nothing)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
