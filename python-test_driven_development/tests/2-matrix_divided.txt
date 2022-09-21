@@ -26,5 +26,3 @@ new matrix
 * Basic cases on success *
 **************************
 
->>> matrix_divided(matrix, 3)
-[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
