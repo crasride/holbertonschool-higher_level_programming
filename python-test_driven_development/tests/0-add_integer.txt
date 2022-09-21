@@ -29,6 +29,6 @@ Basic cases on success:
 	Traceback (most recent call last):
 	NameError: name 'STR' is not defined
 
-	>>> add_integer(nothing)
+	>>> add_integer(None)
 	Traceback (most recent call last):
 	TypeError: a must be an integer
