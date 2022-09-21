@@ -24,3 +24,6 @@ Basic cases on success:
 	>>> add_integer(None)
 	Traceback (most recent call last):
 	TypeError: a must be an integer
+
+	>>> add_integer(float(70), 20)
+	90
