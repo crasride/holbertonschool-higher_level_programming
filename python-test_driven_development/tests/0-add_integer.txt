@@ -18,12 +18,14 @@ Basic cases on success:
 	5
 	
 	>>> add_integer(4, "School")
-	Traceback (most recent call last):
+	Traceback (recent call last):
         TypeError: b must be an integer
 
 	>>> add_integer(None)
-	Traceback (most recent call last):
+	Traceback (recent call last):
 	TypeError: a must be an integer
 
-	>>> add_integer(float(70), 20)
-	90
+	>>> add_integer(float('prt'))
+	Traceback (recent call last):
+	ValueError: cannot convert float prt to integer
+	
