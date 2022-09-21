@@ -1,32 +1,43 @@
-***************************************
-* The ``2--matrix_divided.py`` module *
-***************************************
+********************************
+* How to use matrix_divided.py *
+********************************
 
-Import the module:
+Function called 'matrix_divided()'
 
-	>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+*****************
+* Import module *
+*****************
+
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+******************
+* Initialization *
+******************
+>>> matrix = [[1, 2, 3], [4, 5, 6]]
+
+**********
+* Return *
+**********
+new matrix
 
 
-	*****************
-	* Success cases *
-	*****************
-	
-	>>> matrix_divided(matrix, 3)
-	[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+**************************
+* Basic cases on success *
+**************************
 
-	>>> matrix_divided(matrix, -2)
-	[[-0.5, -1.0, -1.5], [-2.0, -2.5, -3.0]]
+>>> matrix_divided(matrix, 3)
+[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
 
-	>>> matrix_divided(matrix, float("NaN"))
-	[[nan, nan, nan], [nan, nan, nan]]
 
-	>>> matrix_divided(matrix, float("inf"))
-	[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
 
-	>>> matrix = [[1, 2.2, 3], [4.4, 5, 6]]
-	>>> matrix_divided(matrix, 2)
-	[[0.5, 1.1, 1.5], [2.2, 2.5, 3.0]]
+***************
+*  Case Error *
+***************
 
-	***************
-	* Error cases *
-	*************** 
+>>> matrix_divided(None)
+Traceback (most recent call last):
+TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+x_divided([[140, 43.432, 0]], str(100))
+Traceback (most recent call last):
+TypeError: div must be a number
