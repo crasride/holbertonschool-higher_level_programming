@@ -19,5 +19,4 @@ Basic cases on success:
 	
 	>>> add_integer(float('prt'))
 	Traceback (recent call last):
-	ValueError: cannot convert float prt to integer
-	
+	ValueError: could not convert string to float: 'prt'	
