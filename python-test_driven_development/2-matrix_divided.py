@@ -41,5 +41,5 @@ def matrix_divided(matrix, div):
         for x in row:
             new_matrix2.append(round(x / div, 2))
         new_matrix.append(new_matrix2)
-   
+
     return new_matrix
