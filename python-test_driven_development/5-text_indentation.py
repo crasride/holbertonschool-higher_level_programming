@@ -16,5 +16,5 @@ def text_indentation(text):
         raise TypeError("text must be a string")
     else:
         for doc in ".:?":
-            text = (doc + "\n\n").join([line.strip() for line in text.split(doc)])
+            text = (doc + "\n\n").join([line.strip(" ") for line in text.split(doc)])
             print("{}".format(text), end="")
