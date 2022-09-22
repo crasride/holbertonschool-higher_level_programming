@@ -12,10 +12,11 @@ have been joined by str separator.
 def text_indentation(text):
     """ Prints a text with 2 new lines """
 
+    limits = '.:?'
     if type(text) is not str:
         raise TypeError("text must be a string")
-    else:
-        for doc in ".:?":
-            text = (doc + "\n\n").join(
-                    [line.strip(" ") for line in text.split(doc)])
-            print("{}".format(text), end="")
+    for doc in limits:
+        text = str(doc + '\n\n').join(b.strip() for b in text.split(doc))
+    print(text, end='')
+    if len(text) > 0 and text[-1] in limits:
+        print('\n')
