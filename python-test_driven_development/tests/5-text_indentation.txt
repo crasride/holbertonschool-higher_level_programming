@@ -26,15 +26,10 @@ Nothing
 * Basic cases on success *
 **************************
 
->>> text_indentation('Holberton.School')
-Holberton.
-
 >>> text_indentation('  ')
 
-
-
 ******************
-* Cases of Error *
+* Cases of Error 
 ******************
 
 >>> text_indentation(1)
