@@ -37,12 +37,12 @@ My name is Fernandez JOSE
 * Cases of Error *
 ******************
 
->>> say_my_name("Fernandez", "123")
+>>> say_my_name("Fernandez", 123)
 Traceback (most recent call last):
 TypeErro: first_name must be a string
 
 
->>> say_my_name("123", "JOSE")
+>>> say_my_name(123, "JOSE")
 Traceback (most recent call last):
 TypeError: last_name must be a string
 
