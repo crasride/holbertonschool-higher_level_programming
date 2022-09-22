@@ -39,11 +39,11 @@ My name is Fernandez JOSE
 
 >>> say_my_name("Fernandez", 123)
 Traceback (most recent call last):
-TypeErro: first_name must be a string
+TypeError: last_name must be a string
 
 
 >>> say_my_name(123, "JOSE")
 Traceback (most recent call last):
-TypeError: last_name must be a string
+TypeError: first_name must be a string
 
 
