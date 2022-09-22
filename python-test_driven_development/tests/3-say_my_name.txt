@@ -1,0 +1,38 @@
+********************************
+* How to use matrix_divided.py *
+********************************
+
+Function called 'My name is()'
+
+*****************
+* Import module *
+*****************
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+
+******************
+* Initialization *
+******************
+
+
+
+**********
+* Return *
+**********
+nothing if it is not a string
+
+
+**************************
+* Basic cases on success *
+**************************
+
+
+>>> say_my_name("Fernandez", "JOSE")
+My name is Fernandez JOSE
+
+
+
+******************
+* Cases of Error *
+******************
