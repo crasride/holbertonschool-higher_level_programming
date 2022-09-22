@@ -45,6 +45,10 @@ My name is 456 789
 Traceback (most recent call last):
 TypeError: last_name must be a string
 
+>>> say_my_name(int("Josef"), "Fernandez")
+Traceback (most recent call last):
+ValueError: invalid literal for int() with base 10: 'Josef'
+
 >>> say_my_name(123, "JOSE")
 Traceback (most recent call last):
 TypeError: first_name must be a string
