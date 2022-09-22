@@ -1,0 +1,40 @@
+********************************
+* How to use 4-print_square.py *
+********************************
+
+Function called 'print_square'
+
+*****************
+* Import module *
+*****************
+
+>>> print_square = __import__('4-print_square').print_square 
+
+
+******************
+* Initialization *
+******************
+
+
+
+**********
+* Return *
+**********
+
+
+
+**************************
+* Basic cases on success *
+**************************
+ 
+>>> print_square(4)
+####
+####
+####
+####
+
+
+
+******************
+* Cases of Error *
+******************
