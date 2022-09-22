@@ -26,7 +26,10 @@ Nothing
 * Basic cases on success *
 **************************
 
+>>> text_indentation('Holberton.School')
+Holberton.
 
+>>> text_indentation('  ')
 
 
 
