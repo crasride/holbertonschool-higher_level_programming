@@ -35,7 +35,7 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_max_beginning(self):
         """Test list return value"""
-        list_beginning = [10, 10, 10, 10, 10]
+        list_beginning = [10, 8, 7, 6, 4]
         result = max_integer(list_beginning)
         self.assertEqual(result, 10)
 
