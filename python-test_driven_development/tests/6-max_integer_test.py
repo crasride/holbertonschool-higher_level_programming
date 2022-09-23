@@ -33,6 +33,12 @@ class TestMaxInteger(unittest.TestCase):
         """ test list one element """
         self.assertEqual(max_integer([2]), 2)
 
+    def test_max_beginning(self):
+        """Test list return value"""
+        list_beginning = [10, 10, 10, 10, 10]
+        result = max_integer(list_beginning)
+        self.assertEqual(result, 10)
+
 
 if __name__ == '__main__':
     unittest.main()
