@@ -100,4 +100,4 @@ class Rectangle:
     @classmethod
     def square(cls, size=0):
         """ Class Method to Return ne Rectangle instance"""
-        return cls(size, size)
+        return cls(width=size, height=size)
