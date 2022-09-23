@@ -13,8 +13,8 @@ class Rectangle:
         """ increases during each new instance instantiation """
         type(self).number_of_instances += 1
         """ Initialization """
-        self.height = height
         self.width = width
+        self.height = height
 
     @property
     def height(self):
