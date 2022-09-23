@@ -25,6 +25,14 @@ class TestMaxInteger(unittest.TestCase):
         """ tests normal list of ints"""
         self.assertEqual(max_integer([1, 2, 3, 4]), 4)
 
+    def test_list_int_empty(self):
+        """ tests list empty """
+        self.assertEqual(max_integer([]), None)
+
+    def test_list_int_one(self):
+        """ test list one element """
+        self.assertEqual(max_integer([2]), 2)
+
 
 if __name__ == '__main__':
     unittest.main()
