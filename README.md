@@ -14,7 +14,9 @@ The list of projects contained follows :
 * [Python - data structures](./python-data_structures)
 * [Python - more data structures](./python-more_data_structures)
 * [Python - exceptions](./python-exceptions)
-
+* [Python - classes](./python-classes)
+* [Python - test driven development](./python-test_driven_development/)
+* [Python - more classes](./python-more_classes)
 
 ## Author 
 
