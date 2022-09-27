@@ -30,3 +30,5 @@ Function called 'integer_validator(self, name, value)'
 >>> bg = BaseGeometry()
 >>> type(bg)
 <class '7-base_geometry.BaseGeometry'>
+
+>>> bg.integer_validator("width", 89)
