@@ -46,9 +46,6 @@ print the list
 >>> my_list
 ['s', 'a', 'l', 'u', 't']
 
->>> my_list.print_sorted()
-['t', 'u', 'l', 'a', 's']
-
 >>> new_list = MyList()
 
 >>> new_list.print_sorted()
