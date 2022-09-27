@@ -32,3 +32,7 @@ Function called 'integer_validator(self, name, value)'
 <class '7-base_geometry.BaseGeometry'>
 
 >>> bg.integer_validator("width", 89)
+
+>>> bg.area()
+Traceback (most recent call last):
+Exception: area() is not implemented
