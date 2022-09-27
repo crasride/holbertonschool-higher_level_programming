@@ -60,3 +60,8 @@ ValueError: testing must be greater than 0
 >>> bg.integer_validator("testing", "4")
 Traceback (most recent call last):
 TypeError: testing must be an integer
+
+>>> bg.integer_validator("testing", [3])
+Traceback (most recent call last):
+TypeError: testing must be an integer
+
