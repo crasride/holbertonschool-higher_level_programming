@@ -51,6 +51,17 @@ print the list
 >>> new_list.print_sorted()
 []
 
+>>> my_list = MyList()
+
+>>> my_list.append(-1)
+
+>>> my_list.append(-4)
+
+>>> my_list.append(-2)
+
+>>> print(my_list)
+[-1, -4, -2]
+
 ******************
 * Cases of Error *
 ******************
