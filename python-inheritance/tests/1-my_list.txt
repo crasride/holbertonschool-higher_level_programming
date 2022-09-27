@@ -1,0 +1,38 @@
+************************************
+* How to use 5-text_indentation.py *
+************************************
+Function called 'print_sorted(self)'
+
+*****************
+* Import module *
+*****************
+
+>>> MyList = __import__('1-my_list').MyList
+
+
+******************
+* Initialization *
+******************
+
+
+
+**********
+* Return *
+**********
+print the list
+
+
+**************************
+* Basic cases on success *
+**************************
+
+>>> my_list = MyList()
+
+>>> my_list.append(2)
+
+*>>> my_list.print_sorted()
+*[1, 2, 4]
+
+*******************
+* Cases of Error  *
+*******************
