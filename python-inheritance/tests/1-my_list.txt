@@ -29,6 +29,9 @@ print the list
 
 >>> my_list = MyList()
 
+>>> my_list
+[]
+
 >>> my_list.append(1)
 
 >>> my_list.append(5)
@@ -51,13 +54,6 @@ print the list
 >>> new_list.print_sorted()
 []
 
->>> new_list
-[]
-
-
-
-
-
-*******************
-* Cases of Error  *
-*******************
+******************
+* Cases of Error *
+******************
