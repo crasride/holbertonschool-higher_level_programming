@@ -69,14 +69,3 @@ print the list
 
 >>> my_list.print_sorted()
 [-4, -2, -1]
-
->>> new_l = MyList()
-
->>> new_l.print_sorted()
-[]
-
-
-
-******************
-* Cases of Error *
-******************
