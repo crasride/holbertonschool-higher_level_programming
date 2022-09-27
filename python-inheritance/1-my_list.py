@@ -2,7 +2,7 @@
 """ Write a class MyList that inherits from list """
 
 
-class MyList(list):    
+class MyList(list):
     """
     Class MyList is a sub class of list.
     """
