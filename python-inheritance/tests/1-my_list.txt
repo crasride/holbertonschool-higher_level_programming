@@ -53,7 +53,7 @@ print the list
 
 >>> new_list = MyList()
 
->>> print(new_list)
+>>> new_list.print_sorted()
 []
 
 >>> my_list = MyList()
