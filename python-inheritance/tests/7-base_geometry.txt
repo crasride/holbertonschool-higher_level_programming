@@ -1,0 +1,32 @@
+*********************************
+* How to use 7-base_geometry.py *
+*********************************
+
+Function called 'integer_validator(self, name, value)'
+
+*****************
+* Import module *
+*****************
+
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+
+******************
+* Initialization *
+******************
+
+
+
+**********
+* Return *
+**********
+
+
+
+**************************
+* Basic cases on success *
+**************************
+
+>>> bg = BaseGeometry()
+>>> type(bg)
+<class '7-base_geometry.BaseGeometry'>
