@@ -21,4 +21,4 @@ try:
 except Exception as e:
     print("[{}] {}".format(e.__class__.__name__, e))
 
-bg.integer_validator("testing", [3])
+bg.integer_validator("testing", [3, 4])
