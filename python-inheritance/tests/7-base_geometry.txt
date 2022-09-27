@@ -31,8 +31,27 @@ Function called 'integer_validator(self, name, value)'
 >>> type(bg)
 <class '7-base_geometry.BaseGeometry'>
 
->>> bg.integer_validator("width", 89)
+>>> bg.integer_validator("testing", 89)
 
 >>> bg.area()
 Traceback (most recent call last):
 Exception: area() is not implemented
+
+>>> bg.integer_validator(None)
+Traceback (most recent call last):
+TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+>>> bg.integer_validator("testing", True)
+Traceback (most recent call last):
+TypeError: testing must be an integer
+
+>>> bg.integer_validator("testing", None)
+Traceback (most recent call last):
+TypeError: testing must be an integer
+
+>>> bg.integer_validator("testing", -1)
+Traceback (most recent call last):
+ValueError: testing must be greater than 0
+
+
+
