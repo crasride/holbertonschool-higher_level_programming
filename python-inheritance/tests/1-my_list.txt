@@ -62,6 +62,9 @@ print the list
 >>> print(my_list)
 [-1, -4, -2]
 
+>>> my_list.print_sorted()
+[-4, -2, -1]
+
 ******************
 * Cases of Error *
 ******************
