@@ -46,6 +46,10 @@ print the list
 >>> my_list
 ['s', 'a', 'l', 'u', 't']
 
+>>> new_list = MyList()
+
+>>> new_list.print_sorted()
+[]
 
 
 
