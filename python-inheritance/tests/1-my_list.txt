@@ -56,6 +56,9 @@ print the list
 >>> new_list.print_sorted()
 []
 
+>>> MyList.print_sorted(new_list)
+[]
+
 >>> my_list = MyList()
 
 >>> my_list.append(-1)
