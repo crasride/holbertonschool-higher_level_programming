@@ -36,7 +36,7 @@ class Student:
                     dictionary[attribute] = self.__dict__[attribute]
                     # value (of the dict)
             return dictionary
-            
+
     def reload_from_json(self, json):
         """
         Public method
