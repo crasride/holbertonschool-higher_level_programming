@@ -3,5 +3,6 @@
 
 
 def read_file(filename=""):
+    """ Read filename """
     with open(filename, encoding="utf-8") as File:
         print(File.read(), end='')
