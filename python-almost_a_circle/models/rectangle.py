@@ -78,8 +78,8 @@ class Rectangle(Base):
         return self.width * self.height
 
     def display(self):
-        """prints in stdout the Rectangle instance with the character # """
-        if self.width == 0 or self.height == 0:
+        """ prints in stdout the Rectangle instance with the character #
+         if self.width == 0 or self.height == 0:
             print("")
 
         for row in range(0, self.__height):
@@ -88,6 +88,14 @@ class Rectangle(Base):
             for j in range(0, self.__width):
                 print("#", end="")
             print("")
+        """
+        """
+        print in stdout the Rectangle instance with the character #
+        by taking care of x
+        """
+        print("\n" * self.__y, end="")
+        print((" " * self.__x + "#" * self.__width + "\n") *
+              self.__height, end="")
 
     def __str__(self):
         """class Rectangle by overriding the __str__ method"""
