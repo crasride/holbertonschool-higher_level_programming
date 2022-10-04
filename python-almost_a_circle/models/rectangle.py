@@ -122,3 +122,10 @@ class Rectangle(Base):
         for key, value in kwargs.items():
             setattr(self, key, value)
 # itemsreturns view object contains the key-value pairs of the dict,tuples,list
+
+    def to_dictionary(self):
+        """
+        returns a dictionary of the attributes of the Rectangle
+        """
+        l_attribute = ["id", "width", "height", "x", "y"]
+        return {key: getattr(self, key) for key in l_attribute}
