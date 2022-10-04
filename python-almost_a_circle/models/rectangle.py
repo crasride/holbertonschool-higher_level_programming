@@ -104,3 +104,18 @@ class Rectangle(Base):
             self.width, self.height)
         return str
 # f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
+
+    def update(self, *args):
+        """
+        public method, that assigns an argument to each attribut
+        1st argument should be the id attribute
+        2nd argument should be the width attribute
+        3rd argument should be the height attribute
+        4th argument should be the x attribute
+        5th argument should be the y attribute
+        """
+        l_attribute = ["id", "width", "height", "x", "y"]
+        for attribute, arg in zip(l_attribute, args):
+            setattr(self, attribute, arg)
+# setattr sets the value of the specified attribute of the specified object
+# zip eturns an iterator of tuples based on the iterable objects
