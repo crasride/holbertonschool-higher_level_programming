@@ -44,5 +44,5 @@ class Base():
         Deserialize json string into python objects
         """
         if json_string == "" or json_string is None:
-            return None
+            return []
         return json.loads(json_string)
