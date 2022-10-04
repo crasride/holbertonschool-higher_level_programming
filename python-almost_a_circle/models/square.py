@@ -43,3 +43,14 @@ class Square(Rectangle):
         for key, value in kwargs.items():
             setattr(self, key, value)
 # itemsreturns view object contains the key-value pairs of the dict,tuples,list
+
+    def to_dictionary(self):
+        """
+        returns a dictionary with the attributes of the object
+        """
+        return {
+            "id": self.id,
+            "size": self.size,
+            "x": self.x,
+            "y": self.y,
+        }
