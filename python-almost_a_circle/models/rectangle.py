@@ -105,7 +105,7 @@ class Rectangle(Base):
         return str
 # f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """
         public method, that assigns an argument to each attribut
         1st argument should be the id attribute
@@ -119,3 +119,6 @@ class Rectangle(Base):
             setattr(self, attribute, arg)
 # setattr sets the value of the specified attribute of the specified object
 # zip eturns an iterator of tuples based on the iterable objects
+        for key, value in kwargs.items():
+            setattr(self, key, value)
+# itemsreturns view object contains the key-value pairs of the dict,tuples,list
