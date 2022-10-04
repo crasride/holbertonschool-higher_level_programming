@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Base class """
 import json
+from multiprocessing import dummy
 
 
 class Base():
@@ -46,3 +47,14 @@ class Base():
         if json_string == "" or json_string is None:
             return []
         return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """ mehtod return an instance with all attribute """
+        if dictionary and dictionary != {}:
+            if cls.__name__ == "Rectangle":
+                dummy = cls(1, 1)
+            else:
+                dummy = cls(1)
+            dummy.update(**dictionary)
+            return dummy
