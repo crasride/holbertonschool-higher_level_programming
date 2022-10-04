@@ -35,7 +35,7 @@ class Square(Rectangle):
         3rd argument should be the x attribute
         4th argument should be the y attribute
         """
-        l_attribute = ["id", "x", "y"]
+        l_attribute = ["id", "size", "x", "y"]
         for attribute, arg in zip(l_attribute, args):
             setattr(self, attribute, arg)
 # setattr sets the value of the specified attribute of the specified object
