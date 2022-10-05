@@ -53,7 +53,7 @@ class TestSquare(unittest.TestCase):
 
     def test_update(self):
         """test update()"""
-        s1 = Square(5)
+        s1 = Square(2)
         s1.update(10)
         self.assertEqual(s1.id, 10)
         s1.update(x=12)
@@ -62,11 +62,12 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(s1.size, 7)
         self.assertEqual(s1.id, 89)
         self.assertEqual(s1.y, 1)
+        """
         s1.update()
         self.assertEqual(s1.size, 7)
         self.assertEqual(s1.id, 89)
         self.assertEqual(s1.y, 1)
-
+        """
 
 if __name__ == "__main__":
     unittest.main()
