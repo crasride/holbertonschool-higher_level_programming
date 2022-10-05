@@ -4,6 +4,7 @@ import unittest
 from unittest import mock
 import io
 from models.square import Square
+from models.base import Base
 
 
 class TestSquare(unittest.TestCase):
@@ -46,8 +47,9 @@ class TestSquare(unittest.TestCase):
 
     def test_string(self):
         """Test str"""
+        Base._Base__nb_objects = 0
         s = Square(1, 2)
-        self.assertEqual(s.__str__(), '[Square] (8) 2/0 - 1')
+        self.assertEqual(s.__str__(), '[Square] (1) 2/0 - 1')
 
     if __name__ == "__main__":
         unittest.main()
