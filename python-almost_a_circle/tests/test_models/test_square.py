@@ -44,5 +44,10 @@ class TestSquare(unittest.TestCase):
 
         assert mock_stdout.getvalue() == "  #\n"
 
+    def test_string(self):
+        """Test str"""
+        s = Square(1, 2)
+        self.assertEqual(s.__str__(), '[Square] (8) 2/0 - 1')
+
 if __name__ == "__main__":
     unittest.main()
