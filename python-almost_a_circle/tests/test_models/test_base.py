@@ -1,11 +1,27 @@
 #!/usr/bin/python3
-""" Test Base """
+"Unit tests for Base class"
 import unittest
 from models.base import Base
 
 
 class TestBase(unittest.TestCase):
-    """"""
+    "Unit tests suite for Base class"
+
+    def test_constantId(self):
+        "Test of Base for correctly initializing an id"
+        b = Base(5)
+        self.assertEqual(b.id, 5)
+
+    def test_autoId(self):
+        "Test of Base for automatically assigning and incrementing an id"
+        b = Base()
+        self.assertEqual(b.id, 1)
+
+    def test_string(self):
+        """Test of Base for case input is string"""
+        b = Base("string")
+        self.assertEqual(b.id, "string")
+
     def test_to_json_string(self):
         """ Test to_json_string """
         dic = {'id': 1, 'x': 2, 'y': 3, 'width': 4, 'height': 5}
@@ -26,5 +42,6 @@ class TestBase(unittest.TestCase):
             Base.to_json_string([{1, 2}], [{3, 4}])
         self.assertEqual(err, str(i.exception))
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()
