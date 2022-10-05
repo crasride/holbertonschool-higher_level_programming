@@ -7,7 +7,7 @@ from models.base import Base
 class TestBase(unittest.TestCase):
     """"""
     def test_to_json_string(self):
-        """ Test to_json_string functionality """
+        """ Test to_json_string """
         d = {'id': 1, 'x': 2, 'y': 3, 'width': 4, 'height': 5}
         json_d = Base.to_json_string([d])
         self.assertTrue(isinstance(d, dict))
@@ -16,7 +16,7 @@ class TestBase(unittest.TestCase):
             json_d, '{["id": 1, "x": 2, "y": 3, "width": 4, "height": 5]}')
         json_d_1 = Base.to_json_string(None)
         self.assertEqual(json_d_1, "[]")
-        err = ("to_json_string() missing 1 required positional argument: " +
+        err = ("to_json_string() is missing 1 required position argument: : " +
                "'list_dictionaries'")
         with self.assertRaises(TypeError) as e:
             Base.to_json_string()
