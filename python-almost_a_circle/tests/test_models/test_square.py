@@ -53,6 +53,9 @@ class TestSquare(unittest.TestCase):
 
     def test_update(self):
         """test update()"""
-        
+        s1 = Square(2)
+        s1.update(10)
+
+
 if __name__ == "__main__":
     unittest.main()
