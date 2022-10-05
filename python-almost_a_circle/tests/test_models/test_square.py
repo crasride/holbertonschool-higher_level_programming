@@ -55,6 +55,7 @@ class TestSquare(unittest.TestCase):
         """test update()"""
         s1 = Square(2)
         s1.update(10)
+        self.assertEqual(s1.id, 10)
 
 
 if __name__ == "__main__":
