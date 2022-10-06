@@ -119,8 +119,8 @@ class TestSquare(unittest.TestCase):
         serialize and write to a file
         """
         Base._Base__nb_object = 0
-        r1 = Square(9, 2, 7)
-        r2 = Square(2)
+        s1 = Square(9, 2, 7)
+        s2 = Square(2)
         Square.save_to_file(None)
         self.assertIs(os.path.exists("Square.json"), True)
         with open("Square.json", 'r') as file:
