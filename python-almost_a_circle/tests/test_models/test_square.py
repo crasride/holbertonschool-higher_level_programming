@@ -111,11 +111,13 @@ class TestSquare(unittest.TestCase):
         s = Square(10, 9, 8, 7)
         self.assertEqual(dict, s.to_dictionary())
 
-    def test_save_empty_list(self):
-        """test for an empty list"""
-        Square.save_to_file([])
+    def test_save_two_squares(self):
+        """test for two squares"""
+        square1 = Square(10, 7, 2, 8)
+        square2 = Square(8, 1, 2, 3)
+        Square.save_to_file([square1, square2])
         with open("Square.json", "r") as file:
-            self.assertEqual("[]", file.read())
+            self.assertTrue(len(file.read()) == 77)
 
 
 if __name__ == "__main__":
