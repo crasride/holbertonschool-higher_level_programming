@@ -19,6 +19,7 @@ class TestBase(unittest.TestCase):
 
     def test_string(self):
         """Test of Base for case input is string"""
+        Base._Base_nb_objects = 0
         b = Base("string")
         self.assertEqual(b.id, "string")
 
