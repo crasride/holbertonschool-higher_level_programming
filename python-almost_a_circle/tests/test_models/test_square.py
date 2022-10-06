@@ -8,6 +8,7 @@ from models.base import Base
 import os
 import json
 
+
 class TestSquare(unittest.TestCase):
     """Testing Square"""
 
@@ -122,9 +123,10 @@ class TestSquare(unittest.TestCase):
         r2 = Square(2)
         Square.save_to_file(None)
         self.assertIs(os.path.exists("Square.json"), True)
-        with open("Square.json", 'r') as f:
-            self.assertEqual(json.loads(f.read()),
+        with open("Square.json", 'r') as file:
+            self.assertEqual(json.loads(file.read()),
                              json.loads('[]'))
+        os.remove("Square.json")
 
 
 if __name__ == "__main__":
