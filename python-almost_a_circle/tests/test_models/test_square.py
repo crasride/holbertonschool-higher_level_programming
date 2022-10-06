@@ -124,8 +124,7 @@ class TestSquare(unittest.TestCase):
         Square.save_to_file(None)
         self.assertIs(os.path.exists("Square.json"), True)
         with open("Square.json", 'r') as file:
-            self.assertEqual(json.loads(file.read()),
-                             json.loads('[]'))
+            self.assertEqual(json.loads(file.read()), json.loads('[]'))
         os.remove("Square.json")
 
 
