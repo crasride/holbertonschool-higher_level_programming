@@ -11,7 +11,7 @@ The list of projects contained follows :
 * [Python - hello world](./python-hello_world)
 * [Python - if, else, loops, functions](./python-if_else_loops_functions)
 * [Python - import, modules](./python-import_modules)
-* [Python - data structures](./python-data_structures)
+* [Python - data structures: Lists, Tuples](./python-data_structures)
 * [Python - more data structures](./python-more_data_structures)
 * [Python - exceptions](./python-exceptions)
 * [Python - classes](./python-classes)
