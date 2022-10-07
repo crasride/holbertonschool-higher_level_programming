@@ -22,7 +22,6 @@ At the end of this project, you are expected to be able to [explain](https://int
 - How to use the built-in function dir()
 - How to prevent code in your script from being executed when imported
 - How to use command line arguments with your Python programs
-https://medium.com/@4990/everything-is-object-in-python-mutable-and-immutable-data-types-8566477ec3a0
 
 # Requirements
 
