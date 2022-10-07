@@ -4,6 +4,8 @@ import unittest
 from unittest import mock
 import io
 from models.rectangle import Rectangle
+import os
+import json
 
 
 class TestRectangle(unittest.TestCase):
@@ -120,6 +122,13 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(to_test.id, 89)
         self.assertEqual(to_test.x, 0)
         self.assertEqual(to_test.y, 0)
+
+    def test_save_to_file_None(self):
+        """Test of Rectangle.save_to_file(None) in Rectangle exists"""
+        Rectangle.save_to_file(None)
+        with open("Rectangle.json", 'r') as file:
+            self.assertEqual(json.loads(file.read()), json.loads('[]'))
+        os.remove("Rectangle.json")
 
 
 if __name__ == "__main__":
