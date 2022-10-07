@@ -157,6 +157,7 @@ Write a function that prints all integers of a list, in reverse order.
 - You are not allowed to cast integers into strings
 - You have to use `str.format()` to print integers
 
+
 ```
 guillaume@ubuntu:~/$ cat 3-main.py
 #!/usr/bin/python3
@@ -180,7 +181,7 @@ guillaume@ubuntu:~/$
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-data_structures
 File: 3-print_reversed_list_integer.py
-   
+```
 
 ## [4. Replace in a copy](4-new_in_list.py)
 
@@ -195,7 +196,6 @@ Write a function that replaces an element in a list at a specific position witho
 
 ```
 guillaume@ubuntu:~/$ cat 4-main.py
-
 #!/usr/bin/python3
 new_in_list = __import__('4-new_in_list').new_in_list
 
@@ -212,6 +212,7 @@ guillaume@ubuntu:~/$ ./4-main.py
 [1, 2, 3, 4, 5]
 guillaume@ubuntu:~/$ 
 ```
+
 
 ### Repo:
 
@@ -230,6 +231,7 @@ Write a function that removes all characters `c` and `C` from a string.
 - You are not allowed to import any module
 - You are not allowed to use `str.replace()`
 
+
 ```
 guillaume@ubuntu:~/$ cat 5-main.py
 #!/usr/bin/env python3
@@ -242,9 +244,11 @@ print(no_c("C is fun!"))
 guillaume@ubuntu:~/$ ./5-main.py
 Best Shool
 hiago
- is fun!
+is fun!
 guillaume@ubuntu:~/$ 
+
 ```
+
 
 ### Repo:
 
@@ -498,4 +502,3 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: python-data_structures
 File: 12-switch.py
 ```
-
