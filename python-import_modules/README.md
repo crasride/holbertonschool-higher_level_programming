@@ -37,6 +37,7 @@ At the end of this project, you are expected to be able to [explain](https://int
 - The length of your files will be tested using wc
 
 # Tasks
+
 ## [0. Import a simple function from a simple file](0-add.py)
 
 Write a program that imports the function `def add(a, b):` from the file add_0.py and prints the result of the addition `1 + 2 = 3`
@@ -76,12 +77,11 @@ guillaume@ubuntu:~/$
 ```
 
 ### Repo:
-
+```
 GitHub repository: holbertonschool-higher_level_programming
-
 Directory: python-import_modules
-
 File: 0-add.py
+```
 
 ## [1. My first toolbox!](1-calculation.py)
 
@@ -162,12 +162,11 @@ guillaume@ubuntu:~/$
 
 ### Repo:
 
+```
 GitHub repository: holbertonschool-higher_level_programming
-
 Directory: python-import_modules
-
 File: 1-calculation.py
-
+```
 
 ## [2. How to make a script dynamic!](2-args.py)
 
@@ -202,11 +201,11 @@ guillaume@ubuntu:~/$
 
 ### Repo:
 
+```
 GitHub repository: holbertonschool-higher_level_programming
-
 Directory: python-import_modules
-
 File: 2-args.py
+```
 
 ## [3. Infinite addition](3-infinite_add.py)
 
@@ -236,11 +235,11 @@ guillaume@ubuntu:~/$
 
 ### Repo:
 
+```
 GitHub repository: holbertonschool-higher_level_programming
-
 Directory: python-import_modules
-
 File: 3-infinite_add.py
+```
 
 ## [4. Who are you?](4-hidden_discovery.py)
 
@@ -261,11 +260,11 @@ guillaume@ubuntu:~/$
 
 ### Repo:
 
+```
 GitHub repository: holbertonschool-higher_level_programming
-
 Directory: python-import_modules
-
 File: 4-hidden_discovery.py
+```
 
 ## [5. Everything can be imported](5-variable_load.py)
 
@@ -288,8 +287,9 @@ guillaume@ubuntu:~/$
 
 ### Repo:
 
+```
 GitHub repository: holbertonschool-higher_level_programming
-
 Directory: python-import_modules
-
 File: 5-variable_load.py
+```
+
