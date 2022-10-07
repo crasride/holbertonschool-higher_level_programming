@@ -17,6 +17,12 @@ The list of projects contained follows :
 * [Python - classes](./python-classes)
 * [Python - test driven development](./python-test_driven_development/)
 * [Python - more classes](./python-more_classes)
+* [Python - test driven development](./0x07-python-test_driven_development)
+* [Python - more classes](./0x08-python-more_classes)
+* [Python - everything is object](./0x09-python-everything_is_object)
+* [Python - inheritance](./0x0A-python-inheritance)
+* [Python - input, output](./0x0B-python-input_output)
+* [Python - almost a circle](./0x0C-python-almost_a_circle)
 
 ## Author 
 
