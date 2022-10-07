@@ -118,7 +118,6 @@ class TestSquare(unittest.TestCase):
         """Test that `save_to_file()` instance used to directly
         serialize and write to file and delete the file
         """
-        Base._Base__nb_object = 0
         s1 = Square(9, 2, 7)
         s2 = Square(2)
         Square.save_to_file(None)
