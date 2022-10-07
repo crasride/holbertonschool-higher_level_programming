@@ -127,6 +127,12 @@ class TestSquare(unittest.TestCase):
             self.assertEqual(json.loads(file.read()), json.loads('[]'))
         os.remove("Square.json")
 
+    def test_save_empty_list(self):
+        """test empty list"""
+        Square.save_to_file([])
+        with open("Square.json", "r") as file:
+            self.assertEqual("[]", file.read())
+
 
 if __name__ == "__main__":
     unittest.main()

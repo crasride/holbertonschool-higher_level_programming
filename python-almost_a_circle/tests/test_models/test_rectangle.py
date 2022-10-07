@@ -130,6 +130,12 @@ class TestRectangle(unittest.TestCase):
             self.assertEqual(json.loads(file.read()), json.loads('[]'))
         os.remove("Rectangle.json")
 
+    def test_save_empty_list(self):
+        """test  empty list"""
+        Rectangle.save_to_file([])
+        with open("Rectangle.json", "r") as file:
+            self.assertEqual("[]", file.read())
+
 
 if __name__ == "__main__":
     unittest.main()
