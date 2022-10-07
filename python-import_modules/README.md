@@ -23,6 +23,7 @@ At the end of this project, you are expected to be able to [explain](https://int
 - How to prevent code in your script from being executed when imported
 - How to use command line arguments with your Python programs
 https://medium.com/@4990/everything-is-object-in-python-mutable-and-immutable-data-types-8566477ec3a0
+
 # Requirements
 
 ## General
@@ -78,7 +79,9 @@ guillaume@ubuntu:~/$
 ### Repo:
 
 GitHub repository: holbertonschool-higher_level_programming
+
 Directory: python-import_modules
+
 File: 0-add.py
 
 ## [1. My first toolbox!](1-calculation.py)
@@ -161,7 +164,9 @@ guillaume@ubuntu:~/$
 ### Repo:
 
 GitHub repository: holbertonschool-higher_level_programming
+
 Directory: python-import_modules
+
 File: 1-calculation.py
 
 
@@ -199,7 +204,9 @@ guillaume@ubuntu:~/$
 ### Repo:
 
 GitHub repository: holbertonschool-higher_level_programming
+
 Directory: python-import_modules
+
 File: 2-args.py
 
 ## [3. Infinite addition](3-infinite_add.py)
@@ -231,7 +238,9 @@ guillaume@ubuntu:~/$
 ### Repo:
 
 GitHub repository: holbertonschool-higher_level_programming
+
 Directory: python-import_modules
+
 File: 3-infinite_add.py
 
 ## [4. Who are you?](4-hidden_discovery.py)
@@ -254,7 +263,9 @@ guillaume@ubuntu:~/$
 ### Repo:
 
 GitHub repository: holbertonschool-higher_level_programming
+
 Directory: python-import_modules
+
 File: 4-hidden_discovery.py
 
 ## [5. Everything can be imported](5-variable_load.py)
@@ -279,5 +290,7 @@ guillaume@ubuntu:~/$
 ### Repo:
 
 GitHub repository: holbertonschool-higher_level_programming
+
 Directory: python-import_modules
+
 File: 5-variable_load.py
