@@ -6,6 +6,7 @@ import io
 from models.rectangle import Rectangle
 import os
 import json
+from models.base import Base
 
 
 class TestRectangle(unittest.TestCase):
