@@ -6,6 +6,7 @@ import io
 import os
 from models.square import Square
 from models.rectangle import Rectangle
+from models.base import Base
 
 
 class TestSquare(unittest.TestCase):
@@ -79,9 +80,9 @@ class TestSquare(unittest.TestCase):
 
     def test_string(self):
         """Test str"""
-
+        Base._Base__nb_objects = 0
         s = Square(1, 2)
-        self.assertEqual(s.__str__(), '[Square] (24) 2/0 - 1')
+        self.assertEqual(s.__str__(), '[Square] (1) 2/0 - 1')
 
     def test_created(self):
         """Test of Square.create(**{ 'id': 89 }) in Square exists"""
