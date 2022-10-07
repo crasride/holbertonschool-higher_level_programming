@@ -129,9 +129,10 @@ class TestSquare(unittest.TestCase):
 
     def test_save_empty_list(self):
         """test empty list"""
+        Base._Base__nb_object = 0
         Square.save_to_file([])
-        with open("Square.json", "r") as file:
-            self.assertEqual("[]", file.read())
+        with open("Square.json", "r") as file2:
+            self.assertEqual("[]", file2.read())
 
 
 if __name__ == "__main__":
