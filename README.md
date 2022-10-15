@@ -2,7 +2,7 @@
     <img width="150" height="150" src="./kisspng-angle-text-symbol-brand-other-python-5ab0c09b9ea1a7.3286927515215330836498.png"
 </p>
 
-# Projects holbertonschool-higher level programming :
+# Projects Holberton School - Higher Level Programming :
 
 This repository contains files written in Python.  
 
