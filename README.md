@@ -2,11 +2,11 @@
     <img width="150" height="150" src="./kisspng-angle-text-symbol-brand-other-python-5ab0c09b9ea1a7.3286927515215330836498.png"
 </p>
 
-# Projects Holberton School - Higher Level Programming :
+<h1 align="center">Holberton School - Higher Level Programming :</h1>
 
-This repository contains files written in Python.  
 
 The list of projects contained follows :
+
 
 * [Python - hello world](./python-hello_world)
 * [Python - if, else, loops, functions](./python-if_else_loops_functions)
