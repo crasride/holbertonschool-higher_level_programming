@@ -1,6 +1,7 @@
-# Python - Almost a circle
+<h1 align="center">Almost a circle</h1>
 
-## Background Context
+
+# Background Context
 
 The AirBnB project is a big part of the Higher level curriculum. This project will help you be ready for it.
 
@@ -19,7 +20,7 @@ In this project, you will review everything about Python:
 
 You will also learn about:
 
-* args and kwargs
+* `args` and `kwargs`
 * Serialization/Deserialization
 * JSON
 
@@ -32,17 +33,17 @@ Read or watch:
 * [unittest module](https://docs.python.org/3.4/library/unittest.html#module-unittest)
 * [Python test cheatsheet](https://www.pythonsheets.com/notes/python-tests.html)
 
-## Learning Objectives
+# Learning Objectives
 
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/), without the help of Google:
 
-### General
+## General
 
 * What is Unit testing and how to implement it in a large project
 * How to serialize and deserialize a Class
 * How to write and read a JSON file
-* What is __*args__ and how to use it
-* What is __**kwargs__ and how to use it
+* What is `*args` and how to use it
+* What is `**kwargs` and how to use it
 * How to handle named arguments in a function
 
 ## Requirements
@@ -62,7 +63,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 * All your functions (inside and outside a class) should be documented: `python3 -c 'print(__import__("my_module").my_function.__doc__)'` and `python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'`
 * A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
 
-### Python Unit Tests
+# Python Unit Tests
 
 * Allowed editors: `vi`, `vim`, `emacs`
 * All your files should end with a new line
@@ -75,13 +76,14 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 * You can also test file by file by using this command: `python3 -m unittest tests/test_models/test_base.py`
 * We strongly encourage you to work together on test cases so that you don’t miss any edge case
 
-## Tasks
+# Tasks
 
-### 0. If it's not tested it doesn't work
+## [0. If it's not tested it doesn't work](./tests/)
 
 All your files, classes and methods must be unit tested and be PEP 8 validated.
 
-```guillaume@ubuntu:~/$ python3 -m unittest discover tests
+```
+crasride@ubuntu:~/$ python3 -m unittest discover tests
 ...................................................................................
 ...................................................................................
 .......................
@@ -89,11 +91,20 @@ All your files, classes and methods must be unit tested and be PEP 8 validated.
 Ran 189 tests in 13.135s
 
 OK
-guillaume@ubuntu:~/$
+crasride@ubuntu:~/$
+
 ```
+```
+Repo:
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: python-almost_a_circle
+File: tests/
+```
+
 *Note that this is just an example. The number of tests you create can be different from the above example.*
 
-### 1. Base class
+## [1. Base class](./models/)
 
 Write the first class `Base`:
 
@@ -110,7 +121,7 @@ Create a file named `models/base.py`:
 This class will be the “base” of all other classes in this project. The goal of it is to manage `id` attribute in all your future classes and to avoid duplicating the same code (by extension, same bugs)
 
 ```
-guillaume@ubuntu:~/$ cat 0-main.py
+crasride@ubuntu:~/$ cat 0-main.py
 #!/usr/bin/python3
 """ 0-main """
 from models.base import Base
@@ -132,17 +143,24 @@ if __name__ == "__main__":
     b5 = Base()
     print(b5.id)
 
-guillaume@ubuntu:~/$ ./0-main.py
+crasride@ubuntu:~/$ ./0-main.py
 1
 2
 3
 12
 4
-guillaume@ubuntu:~/$
+crasride@ubuntu:~/$
 ```
+```
+Repo:
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: python-almost_a_circle
+```
+File: models / [base.py ](./models/base.py) , models /[`__init__.py`](./models/__init__.py)
 
 
-### 2. First Rectangle
+## [2. First Rectangle](./models/)
 
 
 Write the class `Rectangle` that inherits from `Base`:
@@ -163,7 +181,7 @@ Why private attributes with getter/setter? Why not directly public attribute?
 Because we want to protect attributes of our class. With a setter, you are able to validate what a developer is trying to assign to a variable. So after, in your class you can “trust” these attributes.
 
 ```
-guillaume@ubuntu:~/$ cat 1-main.py
+crasride@ubuntu:~/$ cat 1-main.py
 #!/usr/bin/python3
 """ 1-main """
 from models.rectangle import Rectangle
@@ -179,14 +197,22 @@ if __name__ == "__main__":
     r3 = Rectangle(10, 2, 0, 0, 12)
     print(r3.id)
 
-guillaume@ubuntu:~/$ ./1-main.py
+crasride@ubuntu:~/$ ./1-main.py
 1
 2
 12
-guillaume@ubuntu:~/$
+crasride@ubuntu:~/$
 ```
 
-3. Validate attributes
+```
+Repo:
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: python-almost_a_circle
+File: models/rectangle.py
+```
+
+## [3. Validate attributes](./models/)
 
 Update the class `Rectangle` by adding validation of all setter methods and instantiation (id excluded):
 
@@ -195,7 +221,7 @@ Update the class `Rectangle` by adding validation of all setter methods and inst
 * If `x` or `y` is under 0, raise the `ValueError` exception with the message: `<name of the attribute>` `must be >= 0`. Example: `x must be >= 0`
 
 ```
-guillaume@ubuntu:~/$ cat 2-main.py
+crasride@ubuntu:~/$ cat 2-main.py
 #!/usr/bin/python3
 """ 2-main """
 from models.rectangle import Rectangle
@@ -224,20 +250,27 @@ if __name__ == "__main__":
     except Exception as e:
         print("[{}] {}".format(e.__class__.__name__, e))
 
-guillaume@ubuntu:~/$ ./2-main.py
+crasride@ubuntu:~/$ ./2-main.py
 [TypeError] height must be an integer
 [ValueError] width must be > 0
 [TypeError] x must be an integer
 [ValueError] y must be >= 0
-guillaume@ubuntu:~/$
+crasride@ubuntu:~/$
+```
+```
+Repo:
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: python-almost_a_circle
+File: models/rectangle.py
 ```
 
-### 4. Area first
+## [4. Area first](./models/)
 
 Update the class `Rectangle` by adding the public method `def area(self):` that returns the area value of the `Rectangle` instance.
 
 ```
-guillaume@ubuntu:~/$ cat 3-main.py
+crasride@ubuntu:~/$ cat 3-main.py
 #!/usr/bin/python3
 """ 3-main """
 from models.rectangle import Rectangle
@@ -253,20 +286,27 @@ if __name__ == "__main__":
     r3 = Rectangle(8, 7, 0, 0, 12)
     print(r3.area())
 
-guillaume@ubuntu:~/$ ./3-main.py
+crasride@ubuntu:~/$ ./3-main.py
 6
 20
 56
-guillaume@ubuntu:~/$
+crasride@ubuntu:~/$
+```
+```
+Repo:
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: python-almost_a_circle
+File: models/rectangle.py
 ```
 
-### 5. Display #0
+## [5. Display #0](./models/)
 
 
 Update the class `Rectangle` by adding the public method `def display(self):` that prints in stdout the `Rectangle` instance with the character `#` - you don’t need to handle `x` and `y` here.
 
 ```
-guillaume@ubuntu:~/$ cat 4-main.py
+crasride@ubuntu:~/$ cat 4-main.py
 #!/usr/bin/python3
 """ 4-main """
 from models.rectangle import Rectangle
@@ -281,7 +321,7 @@ if __name__ == "__main__":
     r1 = Rectangle(2, 2)
     r1.display()
 
-guillaume@ubuntu:~/$ ./4-main.py
+crasride@ubuntu:~/$ ./4-main.py
 ####
 ####
 ####
@@ -291,15 +331,23 @@ guillaume@ubuntu:~/$ ./4-main.py
 ---
 ##
 ##
-guillaume@ubuntu:~/$
+crasride@ubuntu:~/$
 ```
 
-### 6. __str__
+```
+Repo:
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: python-almost_a_circle
+File: models/rectangle.py
+```
+
+## [6. __str__](./models/)
 
 Update the class `Rectangle` by overriding the `__str__` method so that it returns `[Rectangle] (<id>) <x>/<y> - <width>/<height>`
 
 ```
-guillaume@ubuntu:~/$ cat 5-main.py
+crasride@ubuntu:~/$ cat 5-main.py
 #!/usr/bin/python3
 """ 5-main """
 from models.rectangle import Rectangle
@@ -312,18 +360,26 @@ if __name__ == "__main__":
     r2 = Rectangle(5, 5, 1)
     print(r2)
 
-guillaume@ubuntu:~/$ ./5-main.py
+crasride@ubuntu:~/$ ./5-main.py
 [Rectangle] (12) 2/1 - 4/6
 [Rectangle] (1) 1/0 - 5/5
-guillaume@ubuntu:~/$
+crasride@ubuntu:~/$
 ```
 
-### 7. Display #1
+```
+Repo:
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: python-almost_a_circle
+File: models/rectangle.py
+```
+
+## [7. Display #1](./models/)
 
 Update the class `Rectangle` by improving the public method def `display(self):` to print in stdout the `Rectangle` instance with the character `#` by taking care of `x` and `y`
 
 ```
-guillaume@ubuntu:~/$ cat 6-main.py
+crasride@ubuntu:~/$ cat 6-main.py
 #!/usr/bin/python3
 """ 6-main """
 from models.rectangle import Rectangle
@@ -338,7 +394,7 @@ if __name__ == "__main__":
     r2 = Rectangle(3, 2, 1, 0)
     r2.display()
 
-guillaume@ubuntu:~/$ ./6-main.py | cat -e
+crasride@ubuntu:~/$ ./6-main.py | cat -e
 $
 $
   ##$
@@ -347,10 +403,18 @@ $
 ---$
  ###$
  ###$
-guillaume@ubuntu:~/$
+crasride@ubuntu:~/$
 ```
 
-### 8. Update #0
+```
+Repo:
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: python-almost_a_circle
+File: models/rectangle.py
+```
+
+## [8. Update #0](./models/)
 
 Update the class `Rectangle` by adding the public method `def update(self, *args):` that assigns an argument to each attribute:
 
@@ -363,7 +427,7 @@ Update the class `Rectangle` by adding the public method `def update(self, *args
 This type of argument is called a “no-keyword argument” - Argument order is super important.
 
 ```
-guillaume@ubuntu:~/$ cat 7-main.py
+crasride@ubuntu:~/$ cat 7-main.py
 #!/usr/bin/python3
 """ Doc """
 from models.rectangle import Rectangle
@@ -388,17 +452,25 @@ if __name__ == "__main__":
     r1.update(89, 2, 3, 4, 5)
     print(r1)
 
-guillaume@ubuntu:~/$ ./7-main.py
+crasride@ubuntu:~/$ ./7-main.py
 [Rectangle] (1) 10/10 - 10/10
 [Rectangle] (89) 10/10 - 10/10
 [Rectangle] (89) 10/10 - 2/10
 [Rectangle] (89) 10/10 - 2/3
 [Rectangle] (89) 4/10 - 2/3
 [Rectangle] (89) 4/5 - 2/3
-guillaume@ubuntu:~/$
+crasride@ubuntu:~/$
 ```
 
-### 9. Update #1
+```
+Repo:
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: python-almost_a_circle
+File: models/rectangle.py
+```
+
+## [9. Update #1](./models/)
 
 Update the class `Rectangle` by updating the public method `def update(self, *args):` by changing the prototype to `update(self, *args, **kwargs)` that assigns a key/value argument to attributes:
 
@@ -410,7 +482,7 @@ Update the class `Rectangle` by updating the public method `def update(self, *ar
 This type of argument is called a “key-worded argument”. Argument order is not important.
 
 ```
-guillaume@ubuntu:~/$ cat 8-main.py
+crasride@ubuntu:~/$ cat 8-main.py
 #!/usr/bin/python3
 """ 8-main """
 from models.rectangle import Rectangle
@@ -432,16 +504,24 @@ if __name__ == "__main__":
     r1.update(x=1, height=2, y=3, width=4)
     print(r1)
 
-guillaume@ubuntu:~/$ ./8-main.py
+crasride@ubuntu:~/$ ./8-main.py
 [Rectangle] (1) 10/10 - 10/10
 [Rectangle] (1) 10/10 - 10/1
 [Rectangle] (1) 2/10 - 1/1
 [Rectangle] (89) 3/1 - 2/1
 [Rectangle] (89) 1/3 - 4/2
-guillaume@ubuntu:~/$
+crasride@ubuntu:~/$
 ```
 
-### 10.  And now, the Square!
+```
+Repo:
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: python-almost_a_circle
+File: models/rectangle.py
+```
+
+## [10.  And now, the Square!](./models/)
 
 Write the class Square that inherits from Rectangle:
 
@@ -456,7 +536,7 @@ Write the class Square that inherits from Rectangle:
 As you know, a Square is a special Rectangle, so it makes sense this class Square inherits from Rectangle. Now you have a Square class who has the same attributes and same methods.
 
 ```
-guillaume@ubuntu:~/$ cat 9-main.py
+crasride@ubuntu:~/$ cat 9-main.py
 #!/usr/bin/python3
 """ 9-main """
 from models.square import Square
@@ -482,7 +562,7 @@ if __name__ == "__main__":
     print(s3.area())
     s3.display()
 
-guillaume@ubuntu:~/$ ./9-main.py
+crasride@ubuntu:~/$ ./9-main.py
 [Square] (1) 0/0 - 5
 25
 #####
@@ -504,10 +584,18 @@ guillaume@ubuntu:~/$ ./9-main.py
  ###
  ###
  ###
-guillaume@ubuntu:~/$
+crasride@ubuntu:~/$
 ```
 
-### 11.  Square size
+```
+Repo:
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: python-almost_a_circle
+File: models/square.py
+```
+
+## [11.  Square size](./models/)
 
 Update the class `Square` by adding the public getter and setter `size`
 
@@ -515,7 +603,7 @@ Update the class `Square` by adding the public getter and setter `size`
 * The setter should have the same value validation as the `Rectangle` for `width` and `height` - No need to change the exception error message (It should be the one from `width`)
 
 ```
-guillaume@ubuntu:~/$ cat 10-main.py
+crasride@ubuntu:~/$ cat 10-main.py
 #!/usr/bin/python3
 """ 10-main """
 from models.square import Square
@@ -533,15 +621,23 @@ if __name__ == "__main__":
     except Exception as e:
         print("[{}] {}".format(e.__class__.__name__, e))
 
-guillaume@ubuntu:~/$ ./10-main.py
+crasride@ubuntu:~/$ ./10-main.py
 [Square] (1) 0/0 - 5
 5
 [Square] (1) 0/0 - 10
 [TypeError] width must be an integer
-guillaume@ubuntu:~/$
+crasride@ubuntu:~/$
 ```
 
-### 12.  Square update
+```
+Repo:
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: python-almost_a_circle
+File: models/square.py
+```
+
+## [12. Square update](./models/)
 
 Update the class `Square` by adding the public method `def update(self, *args, **kwargs)` that assigns attributes:
 
@@ -555,7 +651,7 @@ Update the class `Square` by adding the public method `def update(self, *args, *
 * Each key in this dictionary represents an attribute to the instance
 
 ```
-guillaume@ubuntu:~/$ cat 11-main.py
+crasride@ubuntu:~/$ cat 11-main.py
 #!/usr/bin/python3
 """ 11-main """
 from models.square import Square
@@ -586,7 +682,7 @@ if __name__ == "__main__":
     s1.update(size=7, id=89, y=1)
     print(s1)
 
-guillaume@ubuntu:~/$ ./11-main.py
+crasride@ubuntu:~/$ ./11-main.py
 [Square] (1) 0/0 - 5
 [Square] (10) 0/0 - 5
 [Square] (1) 0/0 - 2
@@ -595,10 +691,18 @@ guillaume@ubuntu:~/$ ./11-main.py
 [Square] (1) 12/4 - 2
 [Square] (1) 12/1 - 7
 [Square] (89) 12/1 - 7
-guillaume@ubuntu:~/$
+crasride@ubuntu:~/$
 ```
 
-### 13.  Rectangle instance to dictionary representation
+```
+Repo:
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: python-almost_a_circle
+File: models/square.py
+```
+
+## [13.  Rectangle instance to dictionary representation](./models/)
 
 Update the class `Rectangle` by adding the public method `def to_dictionary(self):` that returns the dictionary representation of a `Rectangle`:
 
@@ -611,7 +715,7 @@ This dictionary must contain:
 * `y`
 
 ```
-guillaume@ubuntu:~/$ cat 12-main.py
+crasride@ubuntu:~/$ cat 12-main.py
 #!/usr/bin/python3
 """ 12-main """
 from models.rectangle import Rectangle
@@ -630,17 +734,25 @@ if __name__ == "__main__":
     print(r2)
     print(r1 == r2)
 
-guillaume@ubuntu:~/$ ./12-main.py
+crasride@ubuntu:~/$ ./12-main.py
 [Rectangle] (1) 1/9 - 10/2
 {'x': 1, 'y': 9, 'id': 1, 'height': 2, 'width': 10}
 <class 'dict'>
 [Rectangle] (2) 0/0 - 1/1
 [Rectangle] (1) 1/9 - 10/2
 False
-guillaume@ubuntu:~/$
+crasride@ubuntu:~/$
 ```
 
-### 14.  Square instance to dictionary representation
+```
+Repo:
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: python-almost_a_circle
+File: models/rectangle.py
+```
+
+## [14.  Square instance to dictionary representation](./models/)
 
 Update the class `Square` by adding the public method `def to_dictionary(self):` that returns the dictionary representation of a `Square`:
 
@@ -652,7 +764,7 @@ This dictionary must contain:
 * `y`
 
 ```
-guillaume@ubuntu:~/$ cat 13-main.py
+crasride@ubuntu:~/$ cat 13-main.py
 #!/usr/bin/python3
 """ 13-main """
 from models.square import Square
@@ -671,17 +783,24 @@ if __name__ == "__main__":
     print(s2)
     print(s1 == s2)
 
-guillaume@ubuntu:~/$ ./13-main.py
+crasride@ubuntu:~/$ ./13-main.py
 [Square] (1) 2/1 - 10
 {'id': 1, 'x': 2, 'size': 10, 'y': 1}
 <class 'dict'>
 [Square] (2) 1/0 - 1
 [Square] (1) 2/1 - 10
 False
-guillaume@ubuntu:~/$
+crasride@ubuntu:~/$
+```
+```
+Repo:
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: python-almost_a_circle
+File: models/square.py
 ```
 
-### 15.  Dictionary to JSON string
+## [15.  Dictionary to JSON string](./models/)
 
 JSON is one of the standard formats for sharing data representation.
 
@@ -692,7 +811,7 @@ Update the class `Base` by adding the static method `def to_json_string(list_dic
 * Otherwise, return the JSON string representation of `list_dictionaries`
 
 ```
-guillaume@ubuntu:~/$ cat 14-main.py
+crasride@ubuntu:~/$ cat 14-main.py
 #!/usr/bin/python3
 """ 14-main """
 from models.base import Base
@@ -708,15 +827,23 @@ if __name__ == "__main__":
     print(json_dictionary)
     print(type(json_dictionary))
 
-guillaume@ubuntu:~/$ ./14-main.py
+crasride@ubuntu:~/$ ./14-main.py
 {'x': 2, 'width': 10, 'id': 1, 'height': 7, 'y': 8}
 <class 'dict'>
 [{"x": 2, "width": 10, "id": 1, "height": 7, "y": 8}]
 <class 'str'>
-guillaume@ubuntu:~/$
+crasride@ubuntu:~/$
 ```
 
-### 16.  JSON string to file
+```
+Repo:
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: python-almost_a_circle
+File: models/base.py
+```
+
+## [16.  JSON string to file](./models/)
 
 Update the class `Base` by adding the class method `def save_to_file(cls, list_objs):` that writes the JSON string representation of `list_objs` to a file:
 
@@ -727,7 +854,7 @@ Update the class `Base` by adding the class method `def save_to_file(cls, list_o
 * You must overwrite the file if it already exists
 
 ```
-guillaume@ubuntu:~/$ cat 15-main.py
+crasride@ubuntu:~/$ cat 15-main.py
 #!/usr/bin/python3
 """ 15-main """
 from models.rectangle import Rectangle
@@ -741,12 +868,19 @@ if __name__ == "__main__":
     with open("Rectangle.json", "r") as file:
         print(file.read())
 
-guillaume@ubuntu:~/$ ./15-main.py
+crasride@ubuntu:~/$ ./15-main.py
 [{"y": 8, "x": 2, "id": 1, "width": 10, "height": 7}, {"y": 0, "x": 0, "id": 2, "width": 2, "height": 4}]
-guillaume@ubuntu:~/$
+crasride@ubuntu:~/$
+```
+```
+Repo:
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: python-almost_a_circle
+File: models/base.py
 ```
 
-### 17.  JSON string to dictionary
+## [17.  JSON string to dictionary](./models/)
 
 Update the class `Base` by adding the static method `def from_json_string(json_string):` that returns the list of the JSON string representation `json_string`:
 
@@ -755,7 +889,7 @@ Update the class `Base` by adding the static method `def from_json_string(json_s
 * Otherwise, return the list represented by `json_string`
 
 ```
-guillaume@ubuntu:~/$ cat 16-main.py
+crasride@ubuntu:~/$ cat 16-main.py
 #!/usr/bin/python3
 """ 16-main """
 from models.rectangle import Rectangle
@@ -772,14 +906,22 @@ if __name__ == "__main__":
     print("[{}] {}".format(type(json_list_input), json_list_input))
     print("[{}] {}".format(type(list_output), list_output))
 
-guillaume@ubuntu:~/$ ./16-main.py
+crasride@ubuntu:~/$ ./16-main.py
 [<class 'list'>] [{'height': 4, 'width': 10, 'id': 89}, {'height': 7, 'width': 1, 'id': 7}]
 [<class 'str'>] [{"height": 4, "width": 10, "id": 89}, {"height": 7, "width": 1, "id": 7}]
 [<class 'list'>] [{'height': 4, 'width': 10, 'id': 89}, {'height': 7, 'width': 1, 'id': 7}]
-guillaume@ubuntu:~/$
+crasride@ubuntu:~/$
 ```
 
-### 18.  Dictionary to Instance
+```
+Repo:
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: python-almost_a_circle
+File: models/base.py
+```
+
+## [18.  Dictionary to Instance](./models/)
 
 Update the class `Base` by adding the class method `def create(cls, **dictionary):` that returns an instance with all attributes already set:
 
@@ -792,7 +934,7 @@ Update the class `Base` by adding the class method `def create(cls, **dictionary
 * You are not allowed to use `eval`
 
 ```
-guillaume@ubuntu:~/$ cat 17-main.py
+crasride@ubuntu:~/$ cat 17-main.py
 #!/usr/bin/python3
 """ 17-main """
 from models.rectangle import Rectangle
@@ -807,15 +949,23 @@ if __name__ == "__main__":
     print(r1 is r2)
     print(r1 == r2)
 
-guillaume@ubuntu:~/$ ./17-main.py
+crasride@ubuntu:~/$ ./17-main.py
 [Rectangle] (1) 1/0 - 3/5
 [Rectangle] (1) 1/0 - 3/5
 False
 False
-guillaume@ubuntu:~/$
+crasride@ubuntu:~/$
 ```
 
-### 19.  File to instances
+```
+Repo:
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: python-almost_a_circle
+File: models/base.py
+```
+
+### [19.  File to instances](./models/)
 
 Update the class `Base` by adding the class method `def load_from_file(cls):` that returns a list of instances:
 
@@ -825,7 +975,7 @@ Update the class `Base` by adding the class method `def load_from_file(cls):` th
 * You must use the `from_json_string` and `create` methods (implemented previously)
 
 ```
-guillaume@ubuntu:~/$ cat 18-main.py
+crasride@ubuntu:~/$ cat 18-main.py
 #!/usr/bin/python3
 """ 18-main """
 from models.rectangle import Rectangle
@@ -868,7 +1018,7 @@ if __name__ == "__main__":
     for square in list_squares_output:
         print("[{}] {}".format(id(square), square))
 
-guillaume@ubuntu:~/$ ./18-main.py
+crasride@ubuntu:~/$ ./18-main.py
 [139785912033120] [Rectangle] (1) 2/8 - 10/7
 [139785912033176] [Rectangle] (2) 0/0 - 2/4
 ---
@@ -881,5 +1031,12 @@ guillaume@ubuntu:~/$ ./18-main.py
 ---
 [139785911764976] [Square] (5) 0/0 - 5
 [139785911765032] [Square] (6) 9/1 - 7
-guillaume@ubuntu:~/$
+crasride@ubuntu:~/$
+```
+```
+Repo:
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: python-almost_a_circle
+File: models/base.py
 ```
