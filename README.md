@@ -25,3 +25,14 @@ The list of projects contained follows :
 ## Author 
 
 * José Fernàndez Armas
+
+<sub>_You can contact me_ 📩
+
+[Fernandez Armas José Daniel](https://github.com/crasride)
+
+<p align="left">
+<a href="https://twitter.com/JosFern35900656" target="blank"><img align="center" src="./images/twitter.svg" alt="crasride" height="30" width="40" /></a>
+<a href="https://www.linkedin.com/in/jd-fernandez/" target="blank"><img align="center" src="./images/linked-in-alt.svg" alt="crasride" height="30" width="40" /></a>
+<a href="https://medium.com/@4990" target="blank"><img align="center" src="./images/medium.svg" alt="@crasride" height="30" width="40" /></a>
+<a href="https://discord.gg/José Fernandez Armas#7992" target="blank"><img align="center" src="./images/discord.svg" alt="crasride" height="30" width="40" /></a>
+</p>
