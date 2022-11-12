@@ -15,7 +15,6 @@ if __name__ == "__main__":
     # MySQL connection using mysqldb driver
     engine = create_engine("mysql+mysqldb://{}:{}@localhost/{}"
                            .format(sys.argv[1], sys.argv[2], sys.argv[3]))
-                           
     Base.metadata.create_all(engine)
     session = Session(engine)
     s = session.query(State).filter(State.name.like('%a%')).order_by(State.id)
