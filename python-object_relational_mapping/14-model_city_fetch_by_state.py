@@ -21,7 +21,7 @@ if __name__ == "__main__":
     s = Session()
     # changes the name of State Arizona
     for city, state in s.query(City, State) \
-                              .filter(City.state_id == State.id) \
-                              .order_by(City.id):
+                        .filter(City.state_id == State.id) \
+                        .order_by(City.id):
         print("{}: ({}) {}".format(state.name, city.id, city.name))
     s.close()
