@@ -6,6 +6,6 @@ class Square extends Rectangle {
   constructor (size) {
     super(size, size);
   }
-};
+}
 // exports class Square
 module.exports = Square;
